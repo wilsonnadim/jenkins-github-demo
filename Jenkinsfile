@@ -1,5 +1,5 @@
 pipeline {
-    agent OI-PDV-GFN
+    agent 'OI-PDV-GFN'
     stages {
         stage('oi-pdv-gfn') {
             agent {
