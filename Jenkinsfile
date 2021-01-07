@@ -8,6 +8,14 @@ pipeline {
             steps {
                 sh 'echo "hello" >> /tmp/hello_07012021.txt'
             }
-        }         
+        }
+        stage('oi-pdv-ocs') {
+            agent {
+                label 'OI-PDV-OCS02'
+            }
+            steps {
+                sh 'echo "hello" >> /tmp/hello_07012021.txt'
+            }
+        }           
     }
 }
