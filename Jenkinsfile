@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Comando no Linux') {
             agent {
-                label 'linux'
+                label 'OI-PDV-OCS02'
             }
             steps {
                 sh 'echo $HOSTNAME'
