@@ -1,14 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage('Comando no Linux') {
+        stage('oi-pdv-gfn') {
             agent {
-                label 'OI-PDV-OCS02'
+                label 'oi-pdv-gfn'
             }
             steps {
-                sh 'echo $HOSTNAME'
-                sh 'ifconfig'
+                sh 'echo "hello"'
             }
-        }
+        }         
     }
 }
