@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Comando no Windows22') {
+        stage('Comando no Windows2k2') {
             agent {
                 label 'windows'
             }
