@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    stages {
         stage('Comando no Linux') {
             agent {
                 label 'linux'
