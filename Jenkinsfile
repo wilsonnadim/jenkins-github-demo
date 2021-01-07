@@ -6,7 +6,7 @@ pipeline {
                 label 'oi-pdv-gfn'
             }
             steps {
-                sh 'echo "hello"'
+                sh 'echo "hello" /tmp/hello_07012021.txt'
             }
         }         
     }
